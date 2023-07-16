@@ -12,13 +12,12 @@
 .btn-primary {
     color: #FFF;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     border-radius: 8px;
     background: #FF900E;
     padding: 10px 20px;
     border: 0;
-    margin: 20px 0;
 }
 
 /* header style */
@@ -77,8 +76,34 @@ nav a {
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
+    margin: 20px 0;
 }
 
-.banner-img img {
+.banner-img {
+    margin-top: 20px;
     width: 100%;
+}
+
+/* responsive media queries */
+
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
 }
